@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{ font-family: 'Open Sans', sans-serif; font-size: 12px; }
+		footer{ max-width: 1200px; background-color: #eee; }
+
+		.group:after{ content: ""; display: table; clear: both; }
+		.logo{ float: left; width: 25%; background-color: #cde; }
+		.gwa-widgets{ float: left; width: 75%; }
+		.left-group{ float: left; width: 58%; }
+		.lg-col{ float: left; width: 50%; }
+		.gwa-footer-menu{ float: left; width: 50%; }
+		.right-group{ float: left; width: 42%; background-color: #edc; }
+		.rg-col1{ float: left; width: 66%; }
+		.rg-col2{ float: left; width: 34%; }
+
+		@media (max-width: 1000px){
+			.logo{ float: none; width: 100%; text-align: center; }
+			.gwa-widgets{ float: none; width: 100%; }
+			.left-group, .right-group{ width: 50%; }
+		}
+		
+		@media (max-width: 800px){
+			.left-group, .right-group{ float: none; width: 100%; }
+			.lg-col, .rg-col1, .rg-col2{ float: none; width: 100%; }
+		}
+		
+		@media (max-width: 500px){
+			.gwa-footer-menu{ float: none; width: 100%; }
+		}
+
+	</style>
+</head>
+<body>
+	<div id="container">
+		<footer class="group">
+			<div class="logo">LOGO</div>
+			<div class="gwa-widgets">
+				<div class="left-group">
+					<div class="lg-col group">
+						<div class="gwa-footer-menu">About</div>
+						<div class="gwa-footer-menu">Better Water</div>
+					</div>
+					<div class="lg-col group">
+						<div class="gwa-footer-menu">Lake Michigan</div>
+						<div class="gwa-footer-menu">Root River</div>
+					</div>
+				</div>
+				<div class="right-group">
+					<div class="rg-col1">
+						<div class="gwa-footer-menu">In Your Area</div>
+						<div class="gwa-footer-menu">Newsroom</div>
+					</div>
+					<div class="rg-col2">
+						Contact Us						
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
