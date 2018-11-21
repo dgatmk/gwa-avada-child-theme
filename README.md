@@ -2,7 +2,7 @@
 
 **Creation Date:** 2018.10.23  
 **Updated:**  
-**Version:** 1.0.0  
+**Version:** 1.1.0  
   
 	
 ## Description
@@ -95,3 +95,35 @@ function register_gwa_footer_menus() {
 add_action( 'init', 'register_gwa_footer_menus' );
 ```
 ---
+
+### functions.php (2018.10.24)
+
+We needed a way to hide the container holding the Events Calendar information (In Your Area page). To do
+this we check to see if there are any current events. Depending on if we have events or not we add a class
+to the `<body>`. Then we can show/hide the container based on this information.
+
+Class if there are events: `gwa-has-events`  
+Class if there are no events: `gwa-has-no-events`
+
+---
+
+### single.php (2018.11.16)
+This file from the old child theme isn't necessary. The only change to this file was the addition 
+of a "Download Article" button. However this is now handled in the `functions.php` file.
+
+To handle this we check that we're on a single page (`is_single()`) and then check if there's a file
+attached to the post. If so we simple build a button and append it to the content. 
+
+---
+
+### functions.php (2018.11.20)
+
+In a few places we need to have a "read More" type link for a post being pulled by one of the Avada page
+builder elements. Since the "Recent Post" element doens't have an option to have this link we needed
+a way to get the most recent post and build the link. Simplest way to do this was to create a shortcode.
+
+Shortcode and it's use: `[gwa_recent_post_link text='Read More' class='foo-bar']`
+
+Both attributes are optional. `text` defaults to "Read More" and `class` can contain any acceptable
+CSS class you wish to use. It will also append `gwa-recent-post-link-shortcode-anchor` as a class name
+to your input. This is to allow you to universally style this link if you would need to.
