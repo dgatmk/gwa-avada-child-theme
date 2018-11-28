@@ -137,3 +137,17 @@ Added a filter to rewrite the author link to the site's URL.
 Added JavaScript to the Avada theme options to remove the link as a precaution.
 
 Using Yoast SEO to disable author pages (redirect author pages to the main page).
+
+---
+
+### theme-options.js (2018.11.28)
+
+Created this file to add the JavaScript that can be found in the theme options. Otherwise there's no good
+way to track these changes.
+
+Initial commit of this file includes:
+
+1. Code that handles the Lake Michigan "Read More/Less" and "View More/Less" containers.
+2. Code that handled the Partner Communities - Waukesha "Read More/Less" containers.
+3. Code that helps hide author links on single post pages.
+
