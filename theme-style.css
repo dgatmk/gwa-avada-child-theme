@@ -1,0 +1,475 @@
+/*
+ *  Slider Revolution - Avada
+ *    - Remove the borders and the shadow image*
+ *
+ *  * Note - shadow image is turned off in the slider, but still shows once in a while.
+ *           So we're using this to make sure it never shows.
+ *
+ */
+.avada-skin-rev{ border-width: 0; }
+.rev_slider_wrapper .shadow-left, .rev_slider_wrapper .shadow-right{ background-image: none !important; }
+
+
+/*
+ *  Available rulesets
+ *    - Can be applied to containers, columns, etc.
+ */
+.uppercase{ text-transform: uppercase; }
+.gwa-global-top-border{ margin-top: 5px; }
+.gwa-global-bottom-border{ margin-bottom: 5px; }
+.gwa-global-lh1{ line-height: 1; }
+.gwa-font-regular{ font-family: 'Tofino Regular',Arial,Helvetica,sans-serif; }
+.gwa-font-bold{ font-family: 'Tofino Bold',Arial,Helvetica,sans-serif; }
+.gwa-font-ultra{ font-family: 'Tofino Ultra',Arial,Helvetica,sans-serif; }
+.gwa-font-medium{ font-family: 'Tofino Medium',Arial,Helvetica,sans-serif; }
+.gwa-font-book{ font-family: 'Tofino Book',Arial,Helvetica,sans-serif; }
+.gwa-font-black{ font-family: 'Tofino Black',Arial,Helvetica,sans-serif; }
+
+/* Place on containers to remove the border (left or right side) between columns */
+@media (max-width: 1000px){ .small-remove-border .fusion-column-wrapper{ border-width: 0 !important;} }
+
+
+.gwa-global-myth-facts-button:hover{ border-color: #0095a9 !important; }
+.gwa-global-faqs-button:hover{ border-color: #0095a9 !important; }
+.gwa-dark-blue-button-invert:hover{ border-color: #004f6e !important; }
+.gwa-light-blue-button-invert:hover{ border-color: #0095a9 !important; }
+.gwa-white-button-invert:hover{ border-color: #fff !important; }
+.gwa-global-water-form-text-pad{ margin-left: 10%; margin-right: 10%; }
+.gwa-global-large-contact-form{ } /* margin-left: 10% !important; margin-right: 10% !important; */
+.gwa-global-learn-facts-pad{ margin-left: 23%; margin-right: 23%;}
+.gwa-global-inbox-title-pad{ margin-right: 5%; line-height: 1.1; padding-bottom: 10px;}
+.gwa-global-pc-list-pad{ margin-left: 50px !important; }
+.gwa-large-contact-form{ } /* margin-left: 10%; margin-right: 10%; */
+.gwa-learn-facts-button-left{ text-align: right;}
+.gwa-learn-facts-button-right{text-align: left; }
+.gwa-global-social-pad{ margin-left: 26%; margin-right: 26%; }
+.gwa-global-social-links{ color: #004f6e; }
+.gwa-global-social-links:hover{ color: #0095a9; }
+@media (max-width: 1000px){
+  .gwa-global-pc-list-pad{ margin-left: 20px !important; }
+  .gwa-global-pc-buttons{ background-image: url('http://dev.greatwateralliance.com/wp-content/uploads/2018/11/partner-communities-buttons-bg2.jpg') !important; }
+}
+@media (max-width: 1300px ) {
+  .gwa-global-learn-the-facts{ -webkit-background-size: auto !important; -moz-background-size: auto !important; -o-background-size: auto !important; background-size: auto !important; }
+}
+
+/*
+ *  Applied rulesets
+ *    - Rules that are globally applied and no action is needed to use.
+ */
+.group:after{ clear: both; content: ""; display: table; }
+.button-xlarge{ font-size: 22px; line-height: 1.2; padding: 10px 50px; }
+.gwa-social-block .fontawesome-icon{ float: none !important; }
+
+
+/*
+ *  Archive pages
+ *    - Categories, tags, blog, etc.
+ */
+ /* Add padding pack to top/bottom. It's removed on all other pages */
+ body.archive #main{ margin-top: 50px; margin-bottom: 50px; }
+
+
+/*
+ *  Fusion Blog posts element
+ *     - Used on "Newsroom" page
+ */
+.fusion-post-content-container p { font-size: 16px; }
+/* Fusion Rollovers -- make bg color blue and font white */
+.fusion-image-wrapper .fusion-rollover{ background-image: none !important; background-color: #0095a9 !important; }
+a.fusion-rollover-gallery,
+.fusion-rollover-sep,
+.fusion-rollover-link,
+.fusion-rollover-categories{ display: none; }
+h4.fusion-rollover-title a{ color: #fff !important; }
+
+/*
+ *  Fusion recent posts element  --- THIS MAY NOT BE IN USE ANYMORE!!
+ *     - WAS used on "Newsroom" page
+ */
+.recent-posts-content h4{ font-size: 18px; }
+.recent-posts-content p{ font-size: 16px; }
+.fusion-recent-posts .columns .column{ margin-bottom: 25px; }
+
+/*
+ * Events Calendar
+ */
+.fusion-events-meta h2 a{ color: #004f6e; }
+.fusion-events-meta h2 a:hover{ color: #0095a9; }
+
+/*
+ * MailChimp
+ */
+.gwa-mc-email input:focus, .gwa-mc-submit:focus{ outline: none; }
+.gwa-mc-email{ float: left; width: 70%; }
+.gwa-mc-submit{ float: left; width: 28%; margin-left: 2%; }
+.gwa-mc-email input{ width: 100%; max-width: none !important; border: 3px solid #fff; background-color: transparent; padding: 18px 10px; color: #fff; font-size: 18px; font-family: 'Tofino Medium',Arial,Helvetica,sans-serif !important; }
+.gwa-mc-email input::placeholder { color: #fff; opacity: 1; text-transform: uppercase; /* Firefox */ }
+.gwa-mc-email input:-ms-input-placeholder { color: #fff; text-transform: uppercase;  /* Internet Explorer 10-11 */ }
+.gwa-mc-email input::-ms-input-placeholder { color: #fff; text-transform: uppercase; /* Microsoft Edge */ }
+.gwa-mc-submit input[type="submit"]{ color: #004f6e; background: #fff; padding: 5px 20px; border: 3px solid #fff; font-weight: bold; font-size: 18px; font-family: 'Tofino Medium',Arial,Helvetica,sans-serif !important; transition: all .4s }
+.gwa-mc-submit input[type="submit"]:hover{ background: #004f6e; color: #fff; border-color: #004f6e; }
+
+
+
+/*
+ *  Blog/Single Posts
+ */
+.single #main{ margin-top: 50px; margin-bottom: 50px; }
+.single #main p{ font-size: 18px; color: #58595b !important; }
+.single #main .entry-title.fusion-post-title{ font-size: 24px !important; color: #004f6e !important; }
+.gwa-article-pdf{ margin-top: 75px; margin-bottom: 50px; }
+.gwa-article-pdf a.button-1{ border-color: #0095a9; color: #0095a9; }
+.gwa-article-pdf a.button-1:hover{ background-color: #0095a9; color: #fff; }
+article.post .fusion-meta-info-wrapper{ color: #58595b; }
+article.post .fusion-meta-info-wrapper a{ color: #004f6e; }
+article.post .fusion-meta-info-wrapper a:hover{ color: #0095a9; }
+article.post .fusion-sharing-box h4{ color: #004f6e; font-size: 18px !important; }
+
+aside#sidebar{ font-size: 14px; }
+aside#sidebar .textwidget p{ font-size: 14px; }
+aside#sidebar .widget-title{ margin-bottom: 0; }
+
+
+/*
+ * Newsroom page
+ */
+.blog-shortcode-post-title.entry-title a{ color: #004f6e !important; }
+.blog-shortcode-post-title.entry-title a:hover{ color: #0095a9 !important; }
+
+/*
+ * Myths and Facts
+ */
+.myth-facts-faqs .fusion-filter a { font-size: 16px; font-weight: normal; padding-top: 5px; padding-bottom: 5px; color: #58595b; }
+
+/*
+ * Show/hide sliders -- 14 Alternatives, Let's Be Clear video, Waukesha bill
+ *  Lake Michigan (page)
+ *  Great Lakes Compact Council (page)
+ *  Partner Communities - Waukesha
+ */
+.lmbg1{ background-color: #004f6e; }
+.lmbg2{ background-color: #4296b4; }
+.lmbg3{ background-color: #0095a9; }
+.lmbg4{ background-color: #67c7c6; }
+.lm-table{ display: table; border-bottom: 5px solid #fff; width: 100%; }
+.lm-table.lm-table-final{ border-bottom-width: 0; }
+.lm-row{ display: table-row; width: 100%; }
+.lm-cell{ display: table-cell; vertical-align: middle; }
+.lm-cell-half .lm-pad{ padding: 8% 15%; }
+.lm-cell-full .lm-pad{ padding: 4% 20%; }
+.lm-table-hero .lm-pad{ padding-top: 180px; }
+.lm-table-final .lm-pad{ padding-bottom: 110px; }
+.lm-cell-half{ width: 50%; }
+.lm-cell-full{ width: 100%; }
+.lm-half-left{ border-right: 2px solid #fff; }
+.lm-half-right{ border-left: 3px solid #fff; }
+.lm-cell-half p, .lm-cell-full p{ color: #fff; text-align: center; }
+.lm-drop{ background: #004f6e url(http://dev.greatwateralliance.com/wp-content/uploads/2018/11/lm-drop.png) top center no-repeat; }
+.lm-text{ text-align: center; }
+@media (max-width: 1000px) {
+	.lm-table, .lm-row, .lm-cell, .lm-cell-half{ display: block; width: auto; }
+	.lm-half-right{ border-left-width: 0; }
+	.lm-half-left{ border-right-width: 0; border-bottom: 8px solid #fff; }
+}
+.gwa-zindex-fix-two{ position: relative; z-index: 500; }
+#lm-14alt-trigger{ z-index: 710; height: 170px; width: 148px; position: absolute; top: 0; margin-top: -85px; left: 50%; margin-left: -74px; cursor: pointer;}
+.gwa-lm-relative{ position: relative; z-index: 400; }
+#lm-lbc-trigger{ z-index: 410; height: 169px; width: 145px; position: absolute; top: 0; margin-top: -85px; left: 50%; margin-left: -74px; cursor: pointer; }
+#pcw-trigger{ z-index: 710; height: 203px; width: 175px; position: absolute; top: 0; margin-top: -101px; left: 50%; margin-left: -87px; cursor: pointer;}
+/* buttons */
+.gwa-alt-more{ background: url(http://dev.greatwateralliance.com/wp-content/uploads/2018/11/icon-read-more.png) center center no-repeat; }
+.gwa-alt-less, .gwa-pcw-less{ background: url(http://dev.greatwateralliance.com/wp-content/uploads/2018/11/icon-read-less.png) center center no-repeat; }
+.gwa-lbc-more{ background: url(http://dev.greatwateralliance.com/wp-content/uploads/2018/11/icon-view-more.png) center center no-repeat; }
+.gwa-lbc-less{ background: url(http://dev.greatwateralliance.com/wp-content/uploads/2018/11/icon-view-less.png) center center no-repeat; }
+.gwa-pcw-more{ background: url(http://dev.greatwateralliance.com/wp-content/uploads/2018/11/icon-pcw-read-more.png) center center no-repeat; }
+.gwa-pcw-less{ background: url(http://dev.greatwateralliance.com/wp-content/uploads/2018/11/icon-pcw-read-less.png) center center no-repeat; }
+
+
+/*
+ * Lake Michigan page
+ */
+.lm-border{ border-style: solid; border-color: #fff; border-width: 0; }
+.lm-top-border{ border-top-width: 8px; }
+.lm-right-border{ border-right-width: 4px; }
+.lm-bottom-border{ border-bottom-width: 8px; }
+.lm-left-border{ border-left-width: 4px; }
+
+ 
+
+
+/*  THIS MAY NOT BE NEEDED - Loaded fonts using Avada 'custom fonts'
+ *  Typography
+ */
+/* Load Tofino font - 2018.10.23 */
+@font-face {
+    font-family: 'Tofino';
+    src: url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Regular.eot');
+    src: local('Tofino Regular'), local('Tofino-Regular'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Regular.eot?#iefix') format('embedded-opentype'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Regular.woff2') format('woff2'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Regular.woff') format('woff'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Regular.ttf') format('truetype'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Regular.svg#Tofino-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tofino';
+    src: url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Medium.eot');
+    src: local('Tofino Medium'), local('Tofino-Medium'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Medium.eot?#iefix') format('embedded-opentype'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Medium.woff2') format('woff2'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Medium.woff') format('woff'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Medium.ttf') format('truetype'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Medium.svg#Tofino-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tofino Book';
+    src: url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Book.eot');
+    src: local('Tofino Book'), local('Tofino-Book'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Book.eot?#iefix') format('embedded-opentype'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Book.woff2') format('woff2'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Book.woff') format('woff'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Book.ttf') format('truetype'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Book.svg#Tofino-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tofino';
+    src: url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Thin.eot');
+    src: local('Tofino Thin'), local('Tofino-Thin'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Thin.eot?#iefix') format('embedded-opentype'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Thin.woff2') format('woff2'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Thin.woff') format('woff'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Thin.ttf') format('truetype'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Thin.svg#Tofino-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tofino';
+    src: url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Black.eot');
+    src: local('Tofino Black'), local('Tofino-Black'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Black.eot?#iefix') format('embedded-opentype'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Black.woff2') format('woff2'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Black.woff') format('woff'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Black.ttf') format('truetype'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Black.svg#Tofino-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tofino';
+    src: url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Light.eot');
+    src: local('Tofino Light'), local('Tofino-Light'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Light.eot?#iefix') format('embedded-opentype'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Light.woff2') format('woff2'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Light.woff') format('woff'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Light.ttf') format('truetype'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Light.svg#Tofino-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tofino';
+    src: url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Bold.eot');
+    src: local('Tofino Bold'), local('Tofino-Bold'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Bold.eot?#iefix') format('embedded-opentype'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Bold.woff2') format('woff2'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Bold.woff') format('woff'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Bold.ttf') format('truetype'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Bold.svg#Tofino-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tofino Ultra';
+    src: url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Ultra.eot');
+    src: local('Tofino Ultra'), local('Tofino-Ultra'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Ultra.eot?#iefix') format('embedded-opentype'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Ultra.woff2') format('woff2'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Ultra.woff') format('woff'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Ultra.ttf') format('truetype'),
+        url('http://dev.greatwateralliance.com/wp-content/themes/Avada-Child-Theme/tofino-web/hinted-Tofino-Ultra.svg#Tofino-Ultra') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/*
+ * Header
+ *   All things header related
+ *     - Top Bar
+ *     - Logo
+ *     - Navigation
+ *     - Mobile and sticky menu
+ */
+/* Remove bottom border from header - DMG 2018.10.24 */
+.fusion-header-v2 .fusion-header{ border-bottom-width: 0; }
+
+
+/*
+ * Footer
+ *   All things footer related
+ *     - Widget areas
+ *     - Copyright bar
+ */
+
+/* Cover whole footer area with background image - DMG 2018.10.24 */
+.fusion-footer{
+    background-color: #004f6e;
+    background-image: url("//dev.greatwateralliance.com/wp-content/uploads/2018/10/gwa-footer-bg-repeat.jpg");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+}
+
+
+footer ul li{ font-size: 12px; }
+footer ul li:nth-child(1) {
+    font-family: "Tofino Regular", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+footer ul li a, footer ul .current-menu-item a{ color: #fff !important; }
+.fusion-footer-widget-area ul{ margin-bottom: 50px; padding: 0 5px; }
+
+
+/* Address and Inline menu in footer */
+.gwa-footer-inline-menu{ float: right; font-size: 12px; width: 50%; }
+.gwa-footer-address{ float: left; width: 50%; }
+.gwa-footer-address address{ font-size: 12px; font-style: normal; }
+.gwa-footer-inline-menu{ text-align: right; }
+@media (max-width: 1000px){
+    .gwa-footer-inline-menu, .gwa-footer-address{ float: none; width: 100%; }
+    .gwa-footer-address, .gwa-footer-inline-menu{ text-align: center; }
+}
+
+
+/*
+ * Custom Footer - Layout and Responsive
+ *   The code for this was placed in the templates/footer-content.php file. 
+ *   Since Avada only allows for up to 6 widget areas we did the custom footer
+ *   and added 7 new menus to the functions.php file (see that file for more).
+ *
+ * DMG 2018.10.24
+ */
+.logo{ float: left; margin-bottom: 75px; margin-top: 25px; width: 20%; }
+.logo-content{ padding: 0 25px 0 0; }
+.gwa-widgets{ float: left; width: 80%; }
+.left-group{ float: left; width: 58%; }
+.lg-col{ float: left; width: 50%; }
+.gwa-footer-menu{ float: left; width: 50%; }
+.right-group{ float: left; width: 42%; }
+.rg-col1{ float: left; width: 66%; }
+.rg-col2{ float: left; width: 34%; }
+
+@media (max-width: 1000px){
+	.logo{ float: none; text-align: center; width: 100%; }
+	.logo-content{ padding: 0 25px; }
+	.gwa-widgets{ float: none; width: 100%; }
+	.left-group, .right-group{ width: 50%; }
+}
+
+@media (max-width: 900px){
+	.left-group, .right-group{ float: none; width: 100%; }
+	.lg-col, .rg-col1, .rg-col2{ float: none; width: 100%; }
+}
+
+@media (max-width: 500px){
+	.gwa-footer-menu{ float: none; text-align: center; width: 100%; }
+	.rg-col2{ text-align: center; }
+	footer ul li:nth-child(1){ margin-bottom: 0; }
+}
+
+
+/*
+ * Events Plugin by Modern Tribe
+ *
+ */
+/* Used to show/hide even container on pages - functions.php injects class .gwa-has-no-events or .gwa-has-events */
+.gwa-has-no-events .gwa-events-show{ display: none !important; }
+/* Hide meta data */
+.fusion-events-meta h4{ display:none; }
+.fusion-events-content p{ font-size: 14px; }
+
+
+
+/*
+ * Contact Form 7
+ *
+ */
+.gwa-contact{} /* All forms */
+.gwa-large-contact-form{} /* Global form */
+.gwa-contact-us-form{ margin-left: 11%; margin-right: 11%; } /* Contact Us page form */
+
+/* General */
+.gwa-contact input, .gwa-contact textarea, .gwa-contact checkbox{ background: transparent !important; }
+.gwa-contact input, .gwa-contact textarea{ margin-bottom: 25px; padding: 20px 15px !important; }
+.gwa-form-columns{}
+.gwa-form-col{ float: left; margin: 0 2.5%; width: 45%; }
+.gwa-form-wide{ margin: 0 2.5%; }
+.gwa-form-optin{ margin: 0 2.5%; text-align: center; }
+.gwa-form-submit{ margin: 0 2.5%; }
+.gwa-form-submit input{ width: 100% !important; text-transform: uppercase !important; margin-top: 25px; padding: 10px 15px !important; }
+.gwa-form-submit input[type="submit"]:hover{ background: #004f6e !important; color: #fff !important; }
+.gwa-form-optin .wpcf7-form-control-wrap.opt-in .wpcf7-list-item-label{ font-size: 18px !important; text-transform: uppercase; }
+.gwa-contact input[type="checkbox"]{ margin-bottom: 0 !important; }
+.gwa-contact input::placeholder, .gwa-contact textarea::placeholder{ opacity: 1; text-transform: uppercase !important; /* Firefox */ }
+.gwa-contact input:-ms-input-placeholder, .gwa-contact textarea:-ms-input-placeholder{ text-transform: uppercase !important;  /* Internet Explorer 10-11 */ }
+.gwa-contact input::-ms-input-placeholder, .gwa-contact textarea::-ms-input-placeholder{ text-transform: uppercase !important; /* Microsoft Edge */ }
+
+
+/*Global Form*/
+.gwa-large-contact-form input, .gwa-large-contact-form textarea, .gwa-large-contact-form checkbox{ border: 2px solid #fff !important; }
+.gwa-large-contact-form input, .gwa-large-contact-form textarea{ color: #fff !important; }
+.gwa-large-contact-form .gwa-form-optin{ color: #fff; }
+.gwa-large-contact-form .gwa-form-submit input{ color: #fff !important; }
+.gwa-large-contact-form .gwa-form-submit input:hover{ background-color: #004f6e !important; border-color: #004f6e !important; }
+.gwa-large-contact-form  input::placeholder, .gwa-large-contact-form textarea::placeholder { color: #fff !important; }
+.gwa-large-contact-form  input:-ms-input-placeholder, .gwa-large-contact-form textarea:-ms-input-placeholder { color: #fff !important; }
+.gwa-large-contact-form  input::-ms-input-placeholder, .gwa-large-contact-form textarea::-ms-input-placeholder { color: #fff!important; }
+
+/*Contact Us Page Form*/
+.gwa-contact-us-form input, .gwa-contact-us-form textarea, .gwa-contact-us-form checkbox{ border: 2px solid #004f6e !important; }
+.gwa-contact-us-form input, .gwa-contact-us-form textarea{ color: #004f6e !important; }
+.gwa-contact-us-form .gwa-form-optin{ color: #004f6e; }
+.gwa-contact-us-form .gwa-form-submit input{ color: #004f6e !important; }
+.gwa-contact-us-form  input::placeholder, .gwa-contact-us-form textarea::placeholder { color: #004f6e !important; }
+.gwa-contact-us-form  input:-ms-input-placeholder, .gwa-contact-us-form textarea:-ms-input-placeholder { color: #004f6e !important; }
+.gwa-contact-us-form  input::-ms-input-placeholder, .gwa-contact-us-form textarea::-ms-input-placeholder { color: #004f6e!important; }
+
+
+@media (max-width: 1000px){
+    .gwa-form-col{ float: left; margin: 0 2.5%; width: 95%; }
+}
+
+
+/*
+ * Home Page
+ */
+body.home .gwa-home-recent .recent-posts-content h4 a{ color: #004f6e; }
+body.home .gwa-home-recent .recent-posts-content p{ color: #58595b; font-size: 18px; }
+body.home .gwa-home-recent .recent-posts-content p.meta{ color: #636466 !important; font-size: 18px !important; font-family: 'Tofino Medium',Arial,Helvetica,sans-serif; }
+
+body.home .gwa-home-featured .recent-posts-content h4 a{ color: #fff; font-family: 'Tofino Black',Arial,Helvetica,sans-serif; }
+body.home .gwa-home-featured .recent-posts-content p{ color: #fff; font-size: 18px; font-family: 'Tofino Regular',Arial,Helvetica,sans-serif;}
+body.home .gwa-home-featured .recent-posts-content .gwa-home-featured-read-more{ color: #fff; }
+
+.gwa-home-all-posts-button{ border: 2px solid #ccc !important; border-width: 2px 0 !important; text-align: left !important; }
