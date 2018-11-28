@@ -127,3 +127,13 @@ Shortcode and it's use: `[gwa_recent_post_link text='Read More' class='foo-bar']
 Both attributes are optional. `text` defaults to "Read More" and `class` can contain any acceptable
 CSS class you wish to use. It will also append `gwa-recent-post-link-shortcode-anchor` as a class name
 to your input. This is to allow you to universally style this link if you would need to.
+
+---
+
+### functions.php & THEME OPTIONS (2018.11.28)
+
+Added a filter to rewrite the author link to the site's URL.
+
+Added JavaScript to the Avada theme options to remove the link as a precaution.
+
+Using Yoast SEO to disable author pages (redirect author pages to the main page).

@@ -139,3 +139,26 @@ function gwa_recent_post_read_more_link( $atts ){
 }
 add_shortcode( 'gwa_recent_post_link', 'gwa_recent_post_read_more_link' );
 /************************************************************************/
+
+
+/*
+ * Remove author links
+ *   We don't want to show the link to the author page for 
+ *   security reasons. We've already disabled author pages
+ *   using Yoast SEO plugin -- so let's not give "the bad
+ *   guys" a login name.
+ *
+ *	 We're also making use of some JavasScript in the theme
+ *	 options to remove the link and replace it with the author
+ *	 display name as another precaution.
+ * 
+ * DMG 2018.11.28
+ */
+function gwa_remove_link_to_author( $link ){
+	$link = get_site_url();
+	return $link;
+}
+add_filter( 'author_link', 'gwa_remove_link_to_author', 10, 1 ); 	 	 
+/************************************************************************/
+
+
