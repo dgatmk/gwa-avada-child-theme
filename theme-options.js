@@ -10,7 +10,7 @@ jQuery( document ).ready( function ( $ ) {
     // 14 Alternative Facts - onclick of the trigger (image)
     // then show/hide container and switch the trigger image
 	$( "#lm-14alt-trigger" ).click(function() {
-	    $( "#lm-14-alternatives" ).slideToggle( "slow" );
+	    $( ".lm-14-alternatives" ).slideToggle( "slow" );
 
 	    if( $( this ).hasClass( "gwa-alt-more" ) ) {
 	        $( this ).removeClass( "gwa-alt-more" );
