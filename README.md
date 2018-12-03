@@ -151,3 +151,9 @@ Initial commit of this file includes:
 2. Code that handled the Partner Communities - Waukesha "Read More/Less" containers.
 3. Code that helps hide author links on single post pages.
 
+---
+
+### theme-options.js (2018.12.03)
+
+Added some code for the Partner Communities - Waukesha page. There's a section in the slide our area that
+needs to have both columns set to equal height then the slide area is triggered. 
